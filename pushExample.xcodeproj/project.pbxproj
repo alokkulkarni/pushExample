@@ -7,16 +7,63 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		540BF646213EAE050046E1C4 /* GlobalCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540BF645213EAE050046E1C4 /* GlobalCache.swift */; };
+		5413A5D72201EE2400C5FCD2 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5413A5D62201EE2400C5FCD2 /* IntentHandler.swift */; };
+		5413A5DF2201EE2400C5FCD2 /* IntentsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5413A5DE2201EE2400C5FCD2 /* IntentsUI.framework */; };
+		5413A5E22201EE2400C5FCD2 /* IntentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5413A5E12201EE2400C5FCD2 /* IntentViewController.swift */; };
+		5413A5E52201EE2400C5FCD2 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5413A5E32201EE2400C5FCD2 /* MainInterface.storyboard */; };
+		5413A5E92201EE2400C5FCD2 /* PushNotesSiriUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 5413A5DD2201EE2400C5FCD2 /* PushNotesSiriUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5413A5EC2201EE2400C5FCD2 /* PushNotesSiri.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 5413A5D42201EE2400C5FCD2 /* PushNotesSiri.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		54570C2E2139DAE700B758E9 /* RemoteConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54570C2D2139DAE700B758E9 /* RemoteConfig.swift */; };
+		54570C30213A690F00B758E9 /* CrossfadeSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54570C2F213A690F00B758E9 /* CrossfadeSegue.swift */; };
+		54570C32213A6B9C00B758E9 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54570C31213A6B9C00B758E9 /* InitialViewController.swift */; };
+		54570C37213B0DFF00B758E9 /* Configs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54570C36213B0DFF00B758E9 /* Configs.swift */; };
+		54570C3F213C3D4B00B758E9 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54570C3E213C3D4B00B758E9 /* NotificationService.swift */; };
+		54570C43213C3D4B00B758E9 /* ServiceExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 54570C3C213C3D4B00B758E9 /* ServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		54962744214462AE00B60575 /* PricingAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54962743214462AE00B60575 /* PricingAViewController.swift */; };
+		54962746214462BD00B60575 /* PricingBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54962745214462BD00B60575 /* PricingBViewController.swift */; };
+		5496274B214CE38300B60575 /* StringToDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5496274A214CE38300B60575 /* StringToDateFormatter.swift */; };
+		5496274D214CE6DD00B60575 /* DeviceDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5496274C214CE6DD00B60575 /* DeviceDetails.swift */; };
 		54BCA3F12131C956004A963C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BCA3F02131C956004A963C /* AppDelegate.swift */; };
 		54BCA3F32131C956004A963C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BCA3F22131C956004A963C /* ViewController.swift */; };
 		54BCA3F62131C956004A963C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54BCA3F42131C956004A963C /* Main.storyboard */; };
 		54BCA3F82131C958004A963C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54BCA3F72131C958004A963C /* Assets.xcassets */; };
-		54BCA3FB2131C958004A963C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54BCA3F92131C958004A963C /* LaunchScreen.storyboard */; };
 		54BCA4062131C958004A963C /* pushExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BCA4052131C958004A963C /* pushExampleTests.swift */; };
 		54BCA4112131C958004A963C /* pushExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BCA4102131C958004A963C /* pushExampleUITests.swift */; };
+		54D65B952137BC2300B5BF29 /* NotificationViewControllerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D65B942137BC2300B5BF29 /* NotificationViewControllerTableViewController.swift */; };
+		54D65B962137BC2300B5BF29 /* NotificationViewControllerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D65B942137BC2300B5BF29 /* NotificationViewControllerTableViewController.swift */; };
+		54D65B972137BC2300B5BF29 /* NotificationViewControllerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D65B942137BC2300B5BF29 /* NotificationViewControllerTableViewController.swift */; };
+		54D65B992137C0B900B5BF29 /* NotificationPayload.apns in Resources */ = {isa = PBXBuildFile; fileRef = 54D65B982137C0B900B5BF29 /* NotificationPayload.apns */; };
+		54D65B9A2137C0B900B5BF29 /* NotificationPayload.apns in Resources */ = {isa = PBXBuildFile; fileRef = 54D65B982137C0B900B5BF29 /* NotificationPayload.apns */; };
+		54D65B9B2137C0B900B5BF29 /* NotificationPayload.apns in Resources */ = {isa = PBXBuildFile; fileRef = 54D65B982137C0B900B5BF29 /* NotificationPayload.apns */; };
+		54D65BA12137C2F400B5BF29 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 54D65BA02137C2F400B5BF29 /* Localizable.strings */; };
+		54D65BA22137C2F400B5BF29 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 54D65BA02137C2F400B5BF29 /* Localizable.strings */; };
+		54D65BA32137C2F400B5BF29 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 54D65BA02137C2F400B5BF29 /* Localizable.strings */; };
+		EA90DC21699BA500B2377036 /* Pods_pushExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64BF69A2AC755E578F0AE735 /* Pods_pushExample.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		5413A5E72201EE2400C5FCD2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 54BCA3E52131C956004A963C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5413A5DC2201EE2400C5FCD2;
+			remoteInfo = PushNotesSiriUI;
+		};
+		5413A5EA2201EE2400C5FCD2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 54BCA3E52131C956004A963C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5413A5D32201EE2400C5FCD2;
+			remoteInfo = PushNotesSiri;
+		};
+		54570C41213C3D4B00B758E9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 54BCA3E52131C956004A963C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 54570C3B213C3D4B00B758E9;
+			remoteInfo = ServiceExtension;
+		};
 		54BCA4022131C958004A963C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 54BCA3E52131C956004A963C /* Project object */;
@@ -33,13 +80,51 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		54570C47213C3D4B00B758E9 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				5413A5EC2201EE2400C5FCD2 /* PushNotesSiri.appex in Embed App Extensions */,
+				54570C43213C3D4B00B758E9 /* ServiceExtension.appex in Embed App Extensions */,
+				5413A5E92201EE2400C5FCD2 /* PushNotesSiriUI.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		1559F157DDF94855CA1122B7 /* Pods-pushExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pushExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-pushExample/Pods-pushExample.release.xcconfig"; sourceTree = "<group>"; };
+		540BF633213C96D60046E1C4 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		540BF635213C96D60046E1C4 /* UserNotificationsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotificationsUI.framework; path = System/Library/Frameworks/UserNotificationsUI.framework; sourceTree = SDKROOT; };
+		540BF645213EAE050046E1C4 /* GlobalCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalCache.swift; sourceTree = "<group>"; };
+		5413A5D42201EE2400C5FCD2 /* PushNotesSiri.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PushNotesSiri.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		5413A5D62201EE2400C5FCD2 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		5413A5D82201EE2400C5FCD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5413A5DD2201EE2400C5FCD2 /* PushNotesSiriUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PushNotesSiriUI.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		5413A5DE2201EE2400C5FCD2 /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
+		5413A5E12201EE2400C5FCD2 /* IntentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentViewController.swift; sourceTree = "<group>"; };
+		5413A5E42201EE2400C5FCD2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		5413A5E62201EE2400C5FCD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54570C2D2139DAE700B758E9 /* RemoteConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteConfig.swift; sourceTree = "<group>"; };
+		54570C2F213A690F00B758E9 /* CrossfadeSegue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrossfadeSegue.swift; sourceTree = "<group>"; };
+		54570C31213A6B9C00B758E9 /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
+		54570C36213B0DFF00B758E9 /* Configs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configs.swift; sourceTree = "<group>"; };
+		54570C3C213C3D4B00B758E9 /* ServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		54570C3E213C3D4B00B758E9 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		54570C40213C3D4B00B758E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54962743214462AE00B60575 /* PricingAViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PricingAViewController.swift; sourceTree = "<group>"; };
+		54962745214462BD00B60575 /* PricingBViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PricingBViewController.swift; sourceTree = "<group>"; };
+		5496274A214CE38300B60575 /* StringToDateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringToDateFormatter.swift; sourceTree = "<group>"; };
+		5496274C214CE6DD00B60575 /* DeviceDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceDetails.swift; sourceTree = "<group>"; };
 		54BCA3ED2131C956004A963C /* pushExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pushExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54BCA3F02131C956004A963C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		54BCA3F22131C956004A963C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		54BCA3F52131C956004A963C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		54BCA3F72131C958004A963C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		54BCA3FA2131C958004A963C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		54BCA3FC2131C958004A963C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		54BCA4012131C958004A963C /* pushExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = pushExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		54BCA4052131C958004A963C /* pushExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pushExampleTests.swift; sourceTree = "<group>"; };
@@ -47,13 +132,42 @@
 		54BCA40C2131C958004A963C /* pushExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = pushExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		54BCA4102131C958004A963C /* pushExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pushExampleUITests.swift; sourceTree = "<group>"; };
 		54BCA4122131C958004A963C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54BCA41E2131C999004A963C /* pushExample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = pushExample.entitlements; sourceTree = "<group>"; };
+		54D65B942137BC2300B5BF29 /* NotificationViewControllerTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewControllerTableViewController.swift; sourceTree = "<group>"; };
+		54D65B982137C0B900B5BF29 /* NotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = NotificationPayload.apns; sourceTree = "<group>"; };
+		54D65BA02137C2F400B5BF29 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = pushExample/Localizable.strings; sourceTree = "<group>"; };
+		64BF69A2AC755E578F0AE735 /* Pods_pushExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pushExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FE423C9FC418E09F89AECF8 /* Pods-pushExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pushExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-pushExample/Pods-pushExample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		5413A5D12201EE2400C5FCD2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5413A5DA2201EE2400C5FCD2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5413A5DF2201EE2400C5FCD2 /* IntentsUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54570C39213C3D4B00B758E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		54BCA3EA2131C956004A963C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA90DC21699BA500B2377036 /* Pods_pushExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,13 +188,105 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2D9F62F684B706A864CD597E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				64BF69A2AC755E578F0AE735 /* Pods_pushExample.framework */,
+				540BF633213C96D60046E1C4 /* UserNotifications.framework */,
+				540BF635213C96D60046E1C4 /* UserNotificationsUI.framework */,
+				5413A5DE2201EE2400C5FCD2 /* IntentsUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		540BF644213EADEC0046E1C4 /* cache */ = {
+			isa = PBXGroup;
+			children = (
+				540BF645213EAE050046E1C4 /* GlobalCache.swift */,
+			);
+			path = cache;
+			sourceTree = "<group>";
+		};
+		5413A5D52201EE2400C5FCD2 /* PushNotesSiri */ = {
+			isa = PBXGroup;
+			children = (
+				5413A5D62201EE2400C5FCD2 /* IntentHandler.swift */,
+				5413A5D82201EE2400C5FCD2 /* Info.plist */,
+			);
+			path = PushNotesSiri;
+			sourceTree = "<group>";
+		};
+		5413A5E02201EE2400C5FCD2 /* PushNotesSiriUI */ = {
+			isa = PBXGroup;
+			children = (
+				5413A5E12201EE2400C5FCD2 /* IntentViewController.swift */,
+				5413A5E32201EE2400C5FCD2 /* MainInterface.storyboard */,
+				5413A5E62201EE2400C5FCD2 /* Info.plist */,
+			);
+			path = PushNotesSiriUI;
+			sourceTree = "<group>";
+		};
+		54570C33213B0D7700B758E9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				54570C36213B0DFF00B758E9 /* Configs.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		54570C34213B0D8400B758E9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				54BCA3F22131C956004A963C /* ViewController.swift */,
+				54D65B942137BC2300B5BF29 /* NotificationViewControllerTableViewController.swift */,
+				54570C2F213A690F00B758E9 /* CrossfadeSegue.swift */,
+				54570C31213A6B9C00B758E9 /* InitialViewController.swift */,
+				54962743214462AE00B60575 /* PricingAViewController.swift */,
+				54962745214462BD00B60575 /* PricingBViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		54570C35213B0D8E00B758E9 /* service */ = {
+			isa = PBXGroup;
+			children = (
+				54570C2D2139DAE700B758E9 /* RemoteConfig.swift */,
+			);
+			path = service;
+			sourceTree = "<group>";
+		};
+		54570C3D213C3D4B00B758E9 /* ServiceExtension */ = {
+			isa = PBXGroup;
+			children = (
+				54570C3E213C3D4B00B758E9 /* NotificationService.swift */,
+				54570C40213C3D4B00B758E9 /* Info.plist */,
+			);
+			path = ServiceExtension;
+			sourceTree = "<group>";
+		};
+		54962749214CE34B00B60575 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				5496274A214CE38300B60575 /* StringToDateFormatter.swift */,
+				5496274C214CE6DD00B60575 /* DeviceDetails.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		54BCA3E42131C956004A963C = {
 			isa = PBXGroup;
 			children = (
+				54D65BA02137C2F400B5BF29 /* Localizable.strings */,
+				54D65B982137C0B900B5BF29 /* NotificationPayload.apns */,
 				54BCA3EF2131C956004A963C /* pushExample */,
 				54BCA4042131C958004A963C /* pushExampleTests */,
 				54BCA40F2131C958004A963C /* pushExampleUITests */,
+				54570C3D213C3D4B00B758E9 /* ServiceExtension */,
+				5413A5D52201EE2400C5FCD2 /* PushNotesSiri */,
+				5413A5E02201EE2400C5FCD2 /* PushNotesSiriUI */,
 				54BCA3EE2131C956004A963C /* Products */,
+				E7CA4AC35B6A9EF0BF6C5ACF /* Pods */,
+				2D9F62F684B706A864CD597E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -90,6 +296,9 @@
 				54BCA3ED2131C956004A963C /* pushExample.app */,
 				54BCA4012131C958004A963C /* pushExampleTests.xctest */,
 				54BCA40C2131C958004A963C /* pushExampleUITests.xctest */,
+				54570C3C213C3D4B00B758E9 /* ServiceExtension.appex */,
+				5413A5D42201EE2400C5FCD2 /* PushNotesSiri.appex */,
+				5413A5DD2201EE2400C5FCD2 /* PushNotesSiriUI.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -97,11 +306,15 @@
 		54BCA3EF2131C956004A963C /* pushExample */ = {
 			isa = PBXGroup;
 			children = (
+				54962749214CE34B00B60575 /* Utils */,
+				540BF644213EADEC0046E1C4 /* cache */,
+				54570C35213B0D8E00B758E9 /* service */,
+				54570C34213B0D8400B758E9 /* View */,
+				54570C33213B0D7700B758E9 /* Model */,
+				54BCA41E2131C999004A963C /* pushExample.entitlements */,
 				54BCA3F02131C956004A963C /* AppDelegate.swift */,
-				54BCA3F22131C956004A963C /* ViewController.swift */,
 				54BCA3F42131C956004A963C /* Main.storyboard */,
 				54BCA3F72131C958004A963C /* Assets.xcassets */,
-				54BCA3F92131C958004A963C /* LaunchScreen.storyboard */,
 				54BCA3FC2131C958004A963C /* Info.plist */,
 			);
 			path = pushExample;
@@ -125,20 +338,86 @@
 			path = pushExampleUITests;
 			sourceTree = "<group>";
 		};
+		E7CA4AC35B6A9EF0BF6C5ACF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8FE423C9FC418E09F89AECF8 /* Pods-pushExample.debug.xcconfig */,
+				1559F157DDF94855CA1122B7 /* Pods-pushExample.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		54BCA3EC2131C956004A963C /* pushExample */ = {
+		5413A5D32201EE2400C5FCD2 /* PushNotesSiri */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 54BCA4152131C958004A963C /* Build configuration list for PBXNativeTarget "pushExample" */;
+			buildConfigurationList = 5413A5F02201EE2400C5FCD2 /* Build configuration list for PBXNativeTarget "PushNotesSiri" */;
 			buildPhases = (
-				54BCA3E92131C956004A963C /* Sources */,
-				54BCA3EA2131C956004A963C /* Frameworks */,
-				54BCA3EB2131C956004A963C /* Resources */,
+				5413A5D02201EE2400C5FCD2 /* Sources */,
+				5413A5D12201EE2400C5FCD2 /* Frameworks */,
+				5413A5D22201EE2400C5FCD2 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+			);
+			name = PushNotesSiri;
+			productName = PushNotesSiri;
+			productReference = 5413A5D42201EE2400C5FCD2 /* PushNotesSiri.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		5413A5DC2201EE2400C5FCD2 /* PushNotesSiriUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5413A5ED2201EE2400C5FCD2 /* Build configuration list for PBXNativeTarget "PushNotesSiriUI" */;
+			buildPhases = (
+				5413A5D92201EE2400C5FCD2 /* Sources */,
+				5413A5DA2201EE2400C5FCD2 /* Frameworks */,
+				5413A5DB2201EE2400C5FCD2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PushNotesSiriUI;
+			productName = PushNotesSiriUI;
+			productReference = 5413A5DD2201EE2400C5FCD2 /* PushNotesSiriUI.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		54570C3B213C3D4B00B758E9 /* ServiceExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54570C44213C3D4B00B758E9 /* Build configuration list for PBXNativeTarget "ServiceExtension" */;
+			buildPhases = (
+				54570C38213C3D4B00B758E9 /* Sources */,
+				54570C39213C3D4B00B758E9 /* Frameworks */,
+				54570C3A213C3D4B00B758E9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ServiceExtension;
+			productName = ServiceExtension;
+			productReference = 54570C3C213C3D4B00B758E9 /* ServiceExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		54BCA3EC2131C956004A963C /* pushExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54BCA4152131C958004A963C /* Build configuration list for PBXNativeTarget "pushExample" */;
+			buildPhases = (
+				7BD6972534E5BE1D4C5551F5 /* [CP] Check Pods Manifest.lock */,
+				54BCA3E92131C956004A963C /* Sources */,
+				54BCA3EA2131C956004A963C /* Frameworks */,
+				54BCA3EB2131C956004A963C /* Resources */,
+				CADE31F9BFF81D7845C78E6D /* [CP] Embed Pods Frameworks */,
+				54570C47213C3D4B00B758E9 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				54570C42213C3D4B00B758E9 /* PBXTargetDependency */,
+				5413A5E82201EE2400C5FCD2 /* PBXTargetDependency */,
+				5413A5EB2201EE2400C5FCD2 /* PBXTargetDependency */,
 			);
 			name = pushExample;
 			productName = pushExample;
@@ -187,12 +466,32 @@
 		54BCA3E52131C956004A963C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0940;
+				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "Alok Kulkarni";
 				TargetAttributes = {
+					5413A5D32201EE2400C5FCD2 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					5413A5DC2201EE2400C5FCD2 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					54570C3B213C3D4B00B758E9 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
 					54BCA3EC2131C956004A963C = {
 						CreatedOnToolsVersion = 9.4.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+							com.apple.Siri = {
+								enabled = 1;
+							};
+						};
 					};
 					54BCA4002131C958004A963C = {
 						CreatedOnToolsVersion = 9.4.1;
@@ -220,16 +519,42 @@
 				54BCA3EC2131C956004A963C /* pushExample */,
 				54BCA4002131C958004A963C /* pushExampleTests */,
 				54BCA40B2131C958004A963C /* pushExampleUITests */,
+				54570C3B213C3D4B00B758E9 /* ServiceExtension */,
+				5413A5D32201EE2400C5FCD2 /* PushNotesSiri */,
+				5413A5DC2201EE2400C5FCD2 /* PushNotesSiriUI */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		5413A5D22201EE2400C5FCD2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5413A5DB2201EE2400C5FCD2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5413A5E52201EE2400C5FCD2 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54570C3A213C3D4B00B758E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		54BCA3EB2131C956004A963C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				54BCA3FB2131C958004A963C /* LaunchScreen.storyboard in Resources */,
+				54D65BA12137C2F400B5BF29 /* Localizable.strings in Resources */,
+				54D65B992137C0B900B5BF29 /* NotificationPayload.apns in Resources */,
 				54BCA3F82131C958004A963C /* Assets.xcassets in Resources */,
 				54BCA3F62131C956004A963C /* Main.storyboard in Resources */,
 			);
@@ -239,6 +564,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54D65B9A2137C0B900B5BF29 /* NotificationPayload.apns in Resources */,
+				54D65BA22137C2F400B5BF29 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,18 +573,101 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54D65B9B2137C0B900B5BF29 /* NotificationPayload.apns in Resources */,
+				54D65BA32137C2F400B5BF29 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7BD6972534E5BE1D4C5551F5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-pushExample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CADE31F9BFF81D7845C78E6D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-pushExample/Pods-pushExample-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-pushExample/Pods-pushExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		5413A5D02201EE2400C5FCD2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5413A5D72201EE2400C5FCD2 /* IntentHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5413A5D92201EE2400C5FCD2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5413A5E22201EE2400C5FCD2 /* IntentViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54570C38213C3D4B00B758E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54570C3F213C3D4B00B758E9 /* NotificationService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		54BCA3E92131C956004A963C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5496274D214CE6DD00B60575 /* DeviceDetails.swift in Sources */,
+				54962744214462AE00B60575 /* PricingAViewController.swift in Sources */,
 				54BCA3F32131C956004A963C /* ViewController.swift in Sources */,
+				54962746214462BD00B60575 /* PricingBViewController.swift in Sources */,
+				540BF646213EAE050046E1C4 /* GlobalCache.swift in Sources */,
+				54570C32213A6B9C00B758E9 /* InitialViewController.swift in Sources */,
+				54570C2E2139DAE700B758E9 /* RemoteConfig.swift in Sources */,
 				54BCA3F12131C956004A963C /* AppDelegate.swift in Sources */,
+				54570C30213A690F00B758E9 /* CrossfadeSegue.swift in Sources */,
+				5496274B214CE38300B60575 /* StringToDateFormatter.swift in Sources */,
+				54D65B952137BC2300B5BF29 /* NotificationViewControllerTableViewController.swift in Sources */,
+				54570C37213B0DFF00B758E9 /* Configs.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,6 +676,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				54BCA4062131C958004A963C /* pushExampleTests.swift in Sources */,
+				54D65B962137BC2300B5BF29 /* NotificationViewControllerTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,12 +685,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				54BCA4112131C958004A963C /* pushExampleUITests.swift in Sources */,
+				54D65B972137BC2300B5BF29 /* NotificationViewControllerTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		5413A5E82201EE2400C5FCD2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5413A5DC2201EE2400C5FCD2 /* PushNotesSiriUI */;
+			targetProxy = 5413A5E72201EE2400C5FCD2 /* PBXContainerItemProxy */;
+		};
+		5413A5EB2201EE2400C5FCD2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5413A5D32201EE2400C5FCD2 /* PushNotesSiri */;
+			targetProxy = 5413A5EA2201EE2400C5FCD2 /* PBXContainerItemProxy */;
+		};
+		54570C42213C3D4B00B758E9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 54570C3B213C3D4B00B758E9 /* ServiceExtension */;
+			targetProxy = 54570C41213C3D4B00B758E9 /* PBXContainerItemProxy */;
+		};
 		54BCA4032131C958004A963C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 54BCA3EC2131C956004A963C /* pushExample */;
@@ -293,6 +720,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		5413A5E32201EE2400C5FCD2 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5413A5E42201EE2400C5FCD2 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 		54BCA3F42131C956004A963C /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -301,21 +736,138 @@
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		54BCA3F92131C958004A963C /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				54BCA3FA2131C958004A963C /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		5413A5EE2201EE2400C5FCD2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U5EMEFZ957;
+				INFOPLIST_FILE = PushNotesSiriUI/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alok.pushExample.PushNotesSiriUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5413A5EF2201EE2400C5FCD2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U5EMEFZ957;
+				INFOPLIST_FILE = PushNotesSiriUI/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alok.pushExample.PushNotesSiriUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5413A5F12201EE2400C5FCD2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U5EMEFZ957;
+				INFOPLIST_FILE = PushNotesSiri/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alok.pushExample.PushNotesSiri;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5413A5F22201EE2400C5FCD2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U5EMEFZ957;
+				INFOPLIST_FILE = PushNotesSiri/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alok.pushExample.PushNotesSiri;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		54570C45213C3D4B00B758E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U5EMEFZ957;
+				INFOPLIST_FILE = ServiceExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.alok.pushExample.ServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		54570C46213C3D4B00B758E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U5EMEFZ957;
+				INFOPLIST_FILE = ServiceExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.alok.pushExample.ServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		54BCA4132131C958004A963C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -376,6 +928,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -428,8 +981,11 @@
 		};
 		54BCA4162131C958004A963C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8FE423C9FC418E09F89AECF8 /* Pods-pushExample.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = pushExample/pushExample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U5EMEFZ957;
 				INFOPLIST_FILE = pushExample/Info.plist;
@@ -446,8 +1002,11 @@
 		};
 		54BCA4172131C958004A963C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1559F157DDF94855CA1122B7 /* Pods-pushExample.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = pushExample/pushExample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U5EMEFZ957;
 				INFOPLIST_FILE = pushExample/Info.plist;
@@ -547,6 +1106,33 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		5413A5ED2201EE2400C5FCD2 /* Build configuration list for PBXNativeTarget "PushNotesSiriUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5413A5EE2201EE2400C5FCD2 /* Debug */,
+				5413A5EF2201EE2400C5FCD2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5413A5F02201EE2400C5FCD2 /* Build configuration list for PBXNativeTarget "PushNotesSiri" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5413A5F12201EE2400C5FCD2 /* Debug */,
+				5413A5F22201EE2400C5FCD2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		54570C44213C3D4B00B758E9 /* Build configuration list for PBXNativeTarget "ServiceExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54570C45213C3D4B00B758E9 /* Debug */,
+				54570C46213C3D4B00B758E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		54BCA3E82131C956004A963C /* Build configuration list for PBXProject "pushExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

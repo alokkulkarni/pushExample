@@ -1,0 +1,9 @@
+/* 
+  Localizable.strings
+  pushExample
+
+  Created by Alok Kulkarni on 30/08/2018.
+  Copyright © 2018 Alok Kulkarni. All rights reserved.
+*/
+"LBL_HOME" = "Welcome";
+"LBL_NAME" = "Home";
