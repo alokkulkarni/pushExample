@@ -32,7 +32,7 @@ class RemoteConfig {
         
         let cache = GlobalCache.sharedCache as! NSCache<NSString, Config>
         
-        let url = URL(string: "http://97.13.167.170:8080/configs/active")
+        let url = URL(string: "https://998d915e.ngrok.io/configs/active")
         
         var _ : [[String : AnyObject]]? = nil
         
@@ -70,7 +70,7 @@ class RemoteConfig {
     }
     
     func UpdateConfigStatus(UpdateConfig : Bool, configID : String) {
-        let update_url = URL(string: "http://97.13.167.170:8080/configs/\(configID)/updateStatus?status=read")
+        let update_url = URL(string: "http://192.168.0.18:8080/configs/\(configID)/updateStatus?status=read")
         
         let dataTask = URLSession.shared.dataTask(with: update_url!) { (data, respo, error) in
             try! JSON.init(data: (data)!).array?.forEach({ (json) in

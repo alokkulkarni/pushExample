@@ -109,6 +109,9 @@
 		5413A5E12201EE2400C5FCD2 /* IntentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentViewController.swift; sourceTree = "<group>"; };
 		5413A5E42201EE2400C5FCD2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		5413A5E62201EE2400C5FCD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5413AE20242B6B9400095753 /* ServiceExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ServiceExtension.entitlements; sourceTree = "<group>"; };
+		5413AE21242B6BA200095753 /* PushNotesSiri.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PushNotesSiri.entitlements; sourceTree = "<group>"; };
+		5413AE22242B6BAF00095753 /* PushNotesSiriUI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PushNotesSiriUI.entitlements; sourceTree = "<group>"; };
 		54570C2D2139DAE700B758E9 /* RemoteConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteConfig.swift; sourceTree = "<group>"; };
 		54570C2F213A690F00B758E9 /* CrossfadeSegue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrossfadeSegue.swift; sourceTree = "<group>"; };
 		54570C31213A6B9C00B758E9 /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
@@ -120,7 +123,7 @@
 		54962745214462BD00B60575 /* PricingBViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PricingBViewController.swift; sourceTree = "<group>"; };
 		5496274A214CE38300B60575 /* StringToDateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringToDateFormatter.swift; sourceTree = "<group>"; };
 		5496274C214CE6DD00B60575 /* DeviceDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceDetails.swift; sourceTree = "<group>"; };
-		54BCA3ED2131C956004A963C /* pushExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pushExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		54BCA3ED2131C956004A963C /* Push.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Push.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54BCA3F02131C956004A963C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		54BCA3F22131C956004A963C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		54BCA3F52131C956004A963C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -210,6 +213,7 @@
 		5413A5D52201EE2400C5FCD2 /* PushNotesSiri */ = {
 			isa = PBXGroup;
 			children = (
+				5413AE21242B6BA200095753 /* PushNotesSiri.entitlements */,
 				5413A5D62201EE2400C5FCD2 /* IntentHandler.swift */,
 				5413A5D82201EE2400C5FCD2 /* Info.plist */,
 			);
@@ -219,6 +223,7 @@
 		5413A5E02201EE2400C5FCD2 /* PushNotesSiriUI */ = {
 			isa = PBXGroup;
 			children = (
+				5413AE22242B6BAF00095753 /* PushNotesSiriUI.entitlements */,
 				5413A5E12201EE2400C5FCD2 /* IntentViewController.swift */,
 				5413A5E32201EE2400C5FCD2 /* MainInterface.storyboard */,
 				5413A5E62201EE2400C5FCD2 /* Info.plist */,
@@ -258,6 +263,7 @@
 		54570C3D213C3D4B00B758E9 /* ServiceExtension */ = {
 			isa = PBXGroup;
 			children = (
+				5413AE20242B6B9400095753 /* ServiceExtension.entitlements */,
 				54570C3E213C3D4B00B758E9 /* NotificationService.swift */,
 				54570C40213C3D4B00B758E9 /* Info.plist */,
 			);
@@ -293,7 +299,7 @@
 		54BCA3EE2131C956004A963C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				54BCA3ED2131C956004A963C /* pushExample.app */,
+				54BCA3ED2131C956004A963C /* Push.app */,
 				54BCA4012131C958004A963C /* pushExampleTests.xctest */,
 				54BCA40C2131C958004A963C /* pushExampleUITests.xctest */,
 				54570C3C213C3D4B00B758E9 /* ServiceExtension.appex */,
@@ -421,7 +427,7 @@
 			);
 			name = pushExample;
 			productName = pushExample;
-			productReference = 54BCA3ED2131C956004A963C /* pushExample.app */;
+			productReference = 54BCA3ED2131C956004A963C /* Push.app */;
 			productType = "com.apple.product-type.application";
 		};
 		54BCA4002131C958004A963C /* pushExampleTests */ = {
@@ -742,6 +748,7 @@
 		5413A5EE2201EE2400C5FCD2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = PushNotesSiriUI/PushNotesSiriUI.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U5EMEFZ957;
 				INFOPLIST_FILE = PushNotesSiriUI/Info.plist;
@@ -764,6 +771,7 @@
 		5413A5EF2201EE2400C5FCD2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = PushNotesSiriUI/PushNotesSiriUI.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U5EMEFZ957;
 				INFOPLIST_FILE = PushNotesSiriUI/Info.plist;
@@ -785,6 +793,7 @@
 		5413A5F12201EE2400C5FCD2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = PushNotesSiri/PushNotesSiri.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U5EMEFZ957;
 				INFOPLIST_FILE = PushNotesSiri/Info.plist;
@@ -807,6 +816,7 @@
 		5413A5F22201EE2400C5FCD2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = PushNotesSiri/PushNotesSiri.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U5EMEFZ957;
 				INFOPLIST_FILE = PushNotesSiri/Info.plist;
@@ -828,6 +838,7 @@
 		54570C45213C3D4B00B758E9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ServiceExtension/ServiceExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U5EMEFZ957;
 				INFOPLIST_FILE = ServiceExtension/Info.plist;
@@ -847,6 +858,7 @@
 		54570C46213C3D4B00B758E9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ServiceExtension/ServiceExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U5EMEFZ957;
 				INFOPLIST_FILE = ServiceExtension/Info.plist;
@@ -989,12 +1001,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U5EMEFZ957;
 				INFOPLIST_FILE = pushExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.alok.pushExample;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Push;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1010,12 +1023,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U5EMEFZ957;
 				INFOPLIST_FILE = pushExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.alok.pushExample;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Push;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

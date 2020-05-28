@@ -15,15 +15,16 @@ import Messages
 class ViewController: UIViewController, MFMessageComposeViewControllerDelegate {
     
     
+    @IBOutlet weak var lbl_home: UILabel!
+    
+    @IBOutlet weak var lbl_name: UILabel!
     
     func messageComposeViewController(_ controller: MFMessageComposeViewController, didFinishWith result: MessageComposeResult) {
         controller.dismiss(animated: true, completion: nil)
     }
     
     
-    @IBOutlet weak var lbl_home: UILabel!
-    
-    @IBOutlet weak var lbl_name: UILabel!
+
     
     let cache = GlobalCache.sharedCache as! NSCache<NSString, Config>
     
@@ -33,8 +34,10 @@ class ViewController: UIViewController, MFMessageComposeViewControllerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        lbl_home.text = NSLocalizedString("LBL_HOME", comment: " ")
+        lbl_name.text = NSLocalizedString("LBL_NAME", comment: " ")
         // Do any additional setup after loading the view, typically from a nib.
-        self.displayMessageInterface()
+//        self.displayMessageInterface()
         self.setupConfig()
     }
 
@@ -43,11 +46,21 @@ class ViewController: UIViewController, MFMessageComposeViewControllerDelegate {
         // Dispose of any resources that can be recreated.
     }
     
-   
+    @IBAction func refreshConfigs(_ sender: Any) {
+        var configsRetrieved:Bool = false
+        RemoteConfig.init().fetchRemoteConfig { (bool) in
+            if bool! {
+                configsRetrieved = true
+                print(configsRetrieved)
+            }
+        }
+        self.setupConfig()
+    }
+    
     @IBAction func TestABController(_ sender: Any) {
         
-        let viewControllerA = storyboard?.instantiateViewController(withIdentifier: "PricingAController")
-        let viewControllerB = storyboard?.instantiateViewController(withIdentifier: "PricingBController")
+        let viewControllerA = storyboard?.instantiateViewController(withIdentifier: "PricingANavController")
+        let viewControllerB = storyboard?.instantiateViewController(withIdentifier: "PricingBNavController")
         if (cache.object(forKey: "Genericfalse") != nil) {
             let config : Config = (cache.object(forKey: "Genericfalse"))!
             if (config.isConditional == true) {
@@ -64,25 +77,45 @@ class ViewController: UIViewController, MFMessageComposeViewControllerDelegate {
     
     @IBAction func sendLocalNotification(_ sender: Any) {
         
-        let content = UNMutableNotificationContent()
-        content.title = "Local Notification"
-        content.body = "this is a local notification"
-        content.sound = UNNotificationSound.default()
-        content.categoryIdentifier = "Generic"
-        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
-        let request = UNNotificationRequest(identifier: "TestIdentifier", content: content, trigger: trigger)
-        
-        UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
+        OpenVideoApp()
+//        let content = UNMutableNotificationContent()
+//        content.title = "Local Notification"
+//        content.body = "this is a local notification"
+//        content.sound = UNNotificationSound.default()
+//        content.categoryIdentifier = "Generic"
+//        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
+//        let request = UNNotificationRequest(identifier: "TestIdentifier", content: content, trigger: trigger)
+//
+//        UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
     }
     
+    func OpenVideoApp() {
+        let urlString: URL = URL.init(string: "https://invinciblenotify.co.uk/bpf/onboard")!
+        
+        if UIApplication.shared.canOpenURL(urlString) {
+            openUrl(urlString)
+        }
+    }
+    
+    func openUrl(_ url: URL) {
+        if #available(iOS 10.0, *) {
+            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        } else {
+            UIApplication.shared.openURL(url)
+        }
+    }
+        
+        
     func setupConfig() {
+        print("in setup config")
         if (cache.object(forKey: "Generictrue") != nil) {
             let config : Config = (cache.object(forKey: "Generictrue"))!
-            
+            print("generic true to show alert");
             if config.isPopUp == true {
                 let now = Date()
                 let finalDate = stringToDate.sharedInstance.StringToDateFormat(dateString: config.expiration)
-                
+                print(now)
+                print(finalDate)
                 if (finalDate > now) {
                     if config.isPopUp == true {
                         let alert = UIAlertController.init(title: "Hello", message: (config.customParams["BUTTON_TITLE"] as! String), preferredStyle: UIAlertControllerStyle.alert)

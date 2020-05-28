@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "54BCA3EC2131C956004A963C"
-               BuildableName = "pushExample.app"
+               BuildableName = "Push.app"
                BlueprintName = "pushExample"
                ReferencedContainer = "container:pushExample.xcodeproj">
             </BuildableReference>
@@ -27,6 +27,15 @@
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "54BCA3EC2131C956004A963C"
+            BuildableName = "Push.app"
+            BlueprintName = "pushExample"
+            ReferencedContainer = "container:pushExample.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <Testables>
          <TestableReference
             skipped = "NO">
@@ -49,17 +58,6 @@
             </BuildableReference>
          </TestableReference>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "54BCA3EC2131C956004A963C"
-            BuildableName = "pushExample.app"
-            BlueprintName = "pushExample"
-            ReferencedContainer = "container:pushExample.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
-      <AdditionalOptions>
-      </AdditionalOptions>
    </TestAction>
    <LaunchAction
       buildConfiguration = "Debug"
@@ -76,13 +74,11 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "54BCA3EC2131C956004A963C"
-            BuildableName = "pushExample.app"
+            BuildableName = "Push.app"
             BlueprintName = "pushExample"
             ReferencedContainer = "container:pushExample.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
-      <AdditionalOptions>
-      </AdditionalOptions>
       <LocationScenarioReference
          identifier = "London, England"
          referenceType = "1">
@@ -99,7 +95,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "54BCA3EC2131C956004A963C"
-            BuildableName = "pushExample.app"
+            BuildableName = "Push.app"
             BlueprintName = "pushExample"
             ReferencedContainer = "container:pushExample.xcodeproj">
          </BuildableReference>

@@ -12,7 +12,7 @@ class PricingBViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.title = "Pricing B"
         // Do any additional setup after loading the view.
     }
 

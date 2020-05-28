@@ -47,7 +47,8 @@ class InitialViewController: UIViewController {
     
     func startAppForReal() {
         DispatchQueue.main.async {
-            self.performSegue(withIdentifier: "loadingDoneSegue", sender: self)
+            let viewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MainNavController")
+            UIApplication.shared.keyWindow?.rootViewController = viewController
         }
     }
     

@@ -104,7 +104,7 @@ class NotificationViewControllerTableViewController: UITableViewController {
         
         var _ : NSInteger = 0
         
-        guard let url = URL(string: "http://localhost:8080/notifications/321456897") else {return}
+        guard let url = URL(string: "http://192.168.0.18:8080/notifications/321456897") else {return}
         
         Alamofire.request(url, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: headers).validate().responseJSON { (response) in
             print(response)

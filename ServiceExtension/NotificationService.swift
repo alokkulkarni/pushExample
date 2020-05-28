@@ -32,19 +32,19 @@ class NotificationService: UNNotificationServiceExtension {
 //                urlString = image_url as? String
 //            }
             
-//            let imageOptions : [AnyHashable: Any] = [
-//                UNNotificationAttachmentOptionsTypeHintKey : kUTTypePNG,
-//                UNNotificationAttachmentOptionsTypeHintKey : kUTTypeJPEG,
-//                UNNotificationAttachmentOptionsTypeHintKey : kUTTypeGIF
-//            ]
+            let imageOptions : [AnyHashable: Any] = [
+                UNNotificationAttachmentOptionsTypeHintKey : kUTTypePNG,
+                UNNotificationAttachmentOptionsTypeHintKey : kUTTypeJPEG,
+                UNNotificationAttachmentOptionsTypeHintKey : kUTTypeGIF
+            ]
             
-//            let videoOptions : [AnyHashable: Any] = [
-//                UNNotificationAttachmentOptionsTypeHintKey : kUTTypeMovie,
-//                UNNotificationAttachmentOptionsTypeHintKey : kUTTypeMPEG,
-//                UNNotificationAttachmentOptionsTypeHintKey : kUTTypeMPEG4,
-//                UNNotificationAttachmentOptionsTypeHintKey : kUTTypeMPEG2Video,
-//                UNNotificationAttachmentOptionsTypeHintKey : kUTTypeAVIMovie
-//            ]
+            let videoOptions : [AnyHashable: Any] = [
+                UNNotificationAttachmentOptionsTypeHintKey : kUTTypeMovie,
+                UNNotificationAttachmentOptionsTypeHintKey : kUTTypeMPEG,
+                UNNotificationAttachmentOptionsTypeHintKey : kUTTypeMPEG4,
+                UNNotificationAttachmentOptionsTypeHintKey : kUTTypeMPEG2Video,
+                UNNotificationAttachmentOptionsTypeHintKey : kUTTypeAVIMovie
+            ]
             
             let rect = CGRect(x: 0, y: 0, width: 100, height: 100)
             
